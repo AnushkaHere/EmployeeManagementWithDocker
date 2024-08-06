@@ -31,14 +31,14 @@ Navigate to the project directory where the Dockerfile is located.
 Build the Docker image using the following command:
 
 ```bash
-  docker build -t EmployeeManagementCrud .
+  docker build -t employee-management-system .
 ```
 
 ### Running the Docker Container
 Run the Docker container using the following command:
 
 ```bash
-  docker run -d -p 8080:8080 --name EmployeeManagementCrud EmployeeManagementCrud
+  docker run -d -p 8080:8080 --name employee-management-system employee-management-system
 ```
 - `d`: Run the container in detached mode.
 - `p 8080:8080`: Map port 8080 on the host to port 8080 on the container.
@@ -112,13 +112,12 @@ Once the container is running, you can access the application at:
 To stop the running container:
 
 ```bash
-  docker stop EmployeeManagementCrud
-```
+  docker stop employee-management-system
 
 To remove the container:
 
 ```bash
-  docker rm EmployeeManagementCrud
+  docker rm employee-management-system
 ```
 
 ### Troubleshooting
