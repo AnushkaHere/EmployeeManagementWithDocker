@@ -113,6 +113,7 @@ To stop the running container:
 
 ```bash
   docker stop employee-management-system
+```
 
 To remove the container:
 
