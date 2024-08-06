@@ -112,13 +112,13 @@ Once the container is running, you can access the application at:
 To stop the running container:
 
 ```bash
-  docker stop employee-management-system
+  docker stop EmployeeManagementCrud
 ```
 
 To remove the container:
 
 ```bash
-  docker rm employee-management-system
+  docker rm EmployeeManagementCrud
 ```
 
 ### Troubleshooting
