@@ -31,7 +31,7 @@ Navigate to the project directory where the Dockerfile is located.
 Build the Docker image using the following command:
 
 ```bash
-  docker build -t employee-management-system .
+  docker build -t EmployeeManagementCrud .
 ```
 
 ### Running the Docker Container
