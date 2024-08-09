@@ -8,12 +8,63 @@ This Employee Management System is a Spring Boot application that provides CRUD 
 
 - **CRUD Operations**: Create, Read, Update, and Delete employee records.
 - **Spring Boot**: Java-based framework for building the application.
+- **Swagger API**: For documenting the APIs.
 - **Docker**: Containerization of the application for consistent deployment.
 
 ## Prerequisites
 
 - **Docker**: Ensure Docker is installed on your machine.
 - **Java**: Java 17 is recommended for building and running the application.
+
+## API Documentation
+
+The API is documented using [Swagger](https://swagger.io/). The Swagger UI can be accessed at `localhost:8080/swagger-ui/index.html` after running the application.
+
+### Employee Controller
+
+The `EmployeeController` provides endpoints to interact with employee data. Below are the details of each endpoint, including Swagger annotations used for documentation.
+
+#### Get All Employees
+
+- **Endpoint:** `GET /api/employees`
+- **Description:** Fetch all employees from the system.
+- **Responses:**
+  - `200 OK`: Successfully retrieved the list of employees.
+  - `500 Internal Server Error`: An error occurred while fetching the employees.
+
+#### Get Employee by ID
+
+- **Endpoint:** `GET /api/employees/{id}`
+- **Description:** Fetch a specific employee by their ID.
+- **Responses:**
+  - `200 OK`: Successfully retrieved the employee.
+  - `404 Not Found`: Employee with the specified ID not found.
+  - `500 Internal Server Error`: An error occurred while fetching the employee.
+
+#### Add Employee
+
+- **Endpoint:** `POST /api/employees`
+- **Description:** Create a new employee in the system.
+- **Responses:**
+  - `200 OK`: Successfully added the employee.
+  - `201 Created`: A new employee has been created.
+
+#### Update Employee
+
+- **Endpoint:** `PUT /api/employees/{id}`
+- **Description:** Update an existing employee's information.
+- **Responses:**
+  - `200 OK`: Successfully updated the employee.
+  - `201 Created`: Employee info has been updated.
+  - `404 Not Found`: Employee with the specified ID not found.
+
+#### Delete Employee
+
+- **Endpoint:** `DELETE /api/employees/{id}`
+- **Description:** Delete an employee by their ID.
+- **Responses:**
+  - `200 OK`: Successfully deleted the employee.
+  - `404 Not Found`: Employee with the specified ID not found.
 
 ## Getting Started
 
